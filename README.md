@@ -69,3 +69,7 @@ MVPリリースの時点では基礎的なユーザー登録機能、ユーザ�
 オススメのクイズが表示される機能を実装し、クイズの種類を随時増やしていきたいと考えています。
 
 ユーザー登録及び認証機能を実装する為、devise機能を実装しようと考えています。
+
+画面遷移図(MVPリリース版)URL https://www.figma.com/design/G0EwXFs4TorSTVgQgFVJp1/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C-%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3(MVP%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)?node-id=0-1&node-type=canvas&t=hcZ4Vf6p558MiIjd-0
+
+画面遷移図(本リリース版)URL https://www.figma.com/design/OF7MCT7mIHDFe0COfRBGvr/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C-%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3(%E6%9C%AC%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)?node-id=0-1&node-type=canvas&t=M0MqU8XUaouqRNAp-0
