@@ -75,7 +75,7 @@ MVPリリースの時点では基礎的なユーザー登録機能、ユーザ�
 ■ 画面遷移図(本リリース版)URL https://www.figma.com/design/OF7MCT7mIHDFe0COfRBGvr/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C-%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3(%E6%9C%AC%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)?node-id=0-1&node-type=canvas&t=M0MqU8XUaouqRNAp-0
 
 ■ ER図(MVPリリース版)
-![alt text](ER図(MVPリリース版).png)
+![alt text](ER図(MVPリリース版)-1.png)
 
 ■ ER図(本リリース版)
-![alt text](ER図(本リリース版).png)
+![alt text](ER図(本リリース版)-1.png)
