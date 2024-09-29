@@ -17,7 +17,7 @@ header {
     align-items: center;
     padding: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 255, 0.5); /* 透明な青色 */;
 }
 
 .header-container {
@@ -34,4 +34,28 @@ header {
     margin-left: 20px;
     text-decoration: none;
     color: white;
+}
+
+.message {
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 横中央揃え */
+    align-items: center; /* 縦中央揃え */
+    height: auto; /* ビューポートの高さを自動に変更 */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.illustration-container {
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 横中央揃え */
+    align-items: center; /* 縦中央揃え */
+    margin-top: 20px; /* ヘッダーとの隙間を作る */
+    margin-bottom: 0; /* メッセージとの隙間を最小限にする */
+}
+
+.illustration-image {
+    width: 200px;
+    height: auto; /* アスペクト比を維持 */
 }
