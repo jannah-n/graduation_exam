@@ -1,2 +1,61 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* ビューポートの高さに合わせる */
+    background-image: url('アプリ背景2.jpg'); /* assets/imagesに画像を配置 */
+    background-size: contain; /* 画像を画面内に収める */
+    background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+    background-position: center; /* 画像を中央に配置 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.5); /* 透明な青色 */;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.auth-buttons a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.message {
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 横中央揃え */
+    align-items: center; /* 縦中央揃え */
+    height: auto; /* ビューポートの高さを自動に変更 */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.illustration-container {
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 横中央揃え */
+    align-items: center; /* 縦中央揃え */
+    margin-top: 20px; /* ヘッダーとの隙間を作る */
+    margin-bottom: 0; /* メッセージとの隙間を最小限にする */
+}
+
+.illustration-image {
+    width: 200px;
+    height: auto; /* アスペクト比を維持 */
+}
