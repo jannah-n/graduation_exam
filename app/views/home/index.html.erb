@@ -1,4 +1,7 @@
 <%= render 'shared/header' %>
+<% if flash[:success] %>
+  <div class="alert alert-success"><%= flash[:success] %></div>
+<% end %>
 <!-- イラスト画像を追加 -->
 <div class="illustration-container">
   <img src="<%= asset_path('アプリ背景3.jpg') %>" alt="Illustration" class="illustration-image">
