@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get "users/new"
+  get "users/create"
+  resources :users, only: [:new, :create]
   get "home/index"
-  root "home#index"
+  root "home#index" # トップページに戻るための設定
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

@@ -1,0 +1,37 @@
+<body class="signup-page">
+<header>
+  <div class="header-container">
+    <div class="logo">QUIZ-APP</div>
+  </div>
+</header>
+
+<div class="user-register">
+<h1>ユーザー登録</h1>
+
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name, placeholder: "ユーザー名" %>
+  </div>
+  
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email, placeholder: "メールアドレス" %>
+  </div>
+  
+  <div>
+    <%= form.label :encrypted_password %>
+    <%= form.password_field :encrypted_password, placeholder: "パスワード" %>
+  </div>
+  
+  <div>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation, placeholder: "パスワード確認" %>
+  </div>
+  
+  <div>
+    <%= form.submit "登録" %>
+  </div>
+<% end %>
+</div>
+</body>
