@@ -1,7 +1,9 @@
 <header>
   <div class="header-container">
     <div class="logo">QUIZ-APP</div>
-    <span><%= current_user.name %>さん</span>
-    <%= link_to 'ログアウト', logout_path, method: :delete %>
+    <div class="user-info">
+      <span><%= current_user.name %>さん</span>
+      <%= link_to 'ログアウト', logout_path, method: :delete, class: "logout-link" %>
+    </div>
   </div>
 </header>

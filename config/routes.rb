@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get "quizzes/index"
   get "sessions/new"
-  get "sessions/destroy"
   get "users/new"
   post "users/create"
   get 'login', to: 'sessions#new'
