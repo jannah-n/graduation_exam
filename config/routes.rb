@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   get "login", to: "sessions#new", as: :login
   post "login", to: "sessions#create", as: :sessions_create
   delete "logout", to: "sessions#destroy", as: :logout
-  resources :users, only: [:new, :create]
-  resources :quizzes, only: [:index]
+  resources :users, only: [ :new, :create ]
+  resources :quizzes, only: [ :index ]
   get "home/index"
   root "home#index" # トップページに戻るための設定
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

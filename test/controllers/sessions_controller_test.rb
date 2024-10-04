@@ -5,7 +5,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
     # テスト用のユーザーをセットアップ
     @user = users(:one) # fixturesから取得
   end
-  
+
   test "should get new" do
     get login_url  # sessions_new_urlからnew_session_urlに変更
     assert_response :success
