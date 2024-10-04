@@ -108,6 +108,10 @@ header {
     margin-left: 20px; /* ユーザー名とログアウトリンクの間にスペースを追加 */
     text-decoration: none; /* 下線を消す */
     color: white; /* 白色に設定 */
+    background: none;
+    border: none; /* 枠線をなしに設定 */
+    padding: 0; /* パディングをなくす */
+    cursor: pointer; /* カーソルをポインターに */
 }
 
 /* クイズ開始メッセージを中央に配置 */

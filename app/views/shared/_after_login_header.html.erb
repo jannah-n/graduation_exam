@@ -4,7 +4,7 @@
     <div class="user-info">
       <span><%= current_user.name %>さん</span>
       <%= form_with url: logout_path, method: :delete, local: true do %>
-        <%= submit_tag 'ログアウト', class: "logout-link", data: { confirm: '本当にログアウトしますか？' } %>
+        <%= submit_tag 'ログアウト', class: "logout-link" %>
       <% end %>
     </div>
   </div>
