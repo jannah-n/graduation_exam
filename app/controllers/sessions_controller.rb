@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to quizzes_path # クイズ開始画面にリダイレクト
     else
       flash[:danger] = "ログインできませんでした"
-      render :new # ログイン画面を再表示
+      render :new, status: :unprocessable_entity # ログイン画面を再表示
     end
   end
 
