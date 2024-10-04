@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
+  get "quizzes/index"
+  get "sessions/new"
+  get "sessions/destroy"
   get "users/new"
   post "users/create"
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   resources :users, only: [ :new, :create ]
+  resources :quizzes, only: [:index]
   get "home/index"
   root "home#index" # トップページに戻るための設定
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

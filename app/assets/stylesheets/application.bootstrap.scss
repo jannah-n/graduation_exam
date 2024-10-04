@@ -85,3 +85,15 @@ header {
     flex-direction: column;
     gap: 40px; 
 }
+
+.login-page {
+    background: none; /* 背景を表示しない */
+}
+
+.user-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
