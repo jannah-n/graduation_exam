@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  email: MyString
-  encrypted_password: MyString
+  email: test@example.com
+  password_digest: <%= User.digest('password') %> # bcryptを使ってハッシュ化
 
 two:
   name: MyString
   email: MyString
-  encrypted_password: MyString
+  password_digest: MyString

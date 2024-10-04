@@ -1,7 +1,11 @@
 <header>
   <div class="header-container">
     <div class="logo">QUIZ-APP</div>
-    <span><%= current_user.name %>さん</span>
-    <%= link_to 'ログアウト', logout_path, method: :delete %>
+    <div class="user-info">
+      <span><%= current_user.name %>さん</span>
+      <%= form_with url: logout_path, method: :delete, local: true do %>
+        <%= submit_tag 'ログアウト', class: "logout-link" %>
+      <% end %>
+    </div>
   </div>
 </header>

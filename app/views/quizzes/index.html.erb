@@ -1,0 +1,10 @@
+<%= render 'shared/after_login_header' %>
+
+<% if flash[:success] %>
+  <div class="alert alert-success"><%= flash[:success] %></div>
+<% end %>
+
+<div class="quiz-start-message">
+  <h1>クイズを開始しよう!!</h1>
+  <%= button_to "START", '#', method: :get, class: "btn btn-primary" %> <!-- 適切なクイズ開始のパスを指定 -->
+</div>

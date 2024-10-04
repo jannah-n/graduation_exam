@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "ユーザー名を3文字以上で入力してください"
+            email:
+              blank: "メールアドレスを入力してください"
+              invalid: "メールアドレスが不正です"
+            password:
+              blank: "パスワードを6文字以上で入力してください"
+            password_confirmation:
+              blank: "パスワード確認を入力してください"
