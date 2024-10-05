@@ -1,0 +1,15 @@
+<h2><%= @question.content %></h2>
+<%= image_tag @question.correct_image %>
+<%= image_tag @question.incorrect_image %>
+
+<%= form_with url: answer_quiz_path(@question) do |form| %>
+  <div>
+    <%= form.radio_button :choice, @question.correct_choice %>
+    <%= form.label :choice, @question.correct_choice %>
+  </div>
+  <div>
+    <%= form.radio_button :choice, @question.incorrect_choice %>
+    <%= form.label :choice, @question.incorrect_choice %>
+  </div>
+  <%= form.submit '判定' %>
+<% end %>

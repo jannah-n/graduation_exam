@@ -42,4 +42,8 @@ class QuizzesController < ApplicationController
       redirect_to login_path
     end
   end
+
+  def set_questions
+    session[:quiz_questions] ||= Question.all.sample(10).map(&:id)  # ランダムに10問取得してセッションに保存
+  end
 end
