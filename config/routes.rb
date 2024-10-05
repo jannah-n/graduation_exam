@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   post "login", to: "sessions#create", as: :sessions_create
   delete "logout", to: "sessions#destroy", as: :logout
   resources :users, only: [ :new, :create ]
-  resources :quizzes, only: [ :index ]
+  resources :quizzes, only: [ :index, :show ] do
+    post 'answer', on: :member
+  end
   get "home/index"
   root "home#index" # トップページに戻るための設定
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
