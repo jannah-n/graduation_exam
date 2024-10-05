@@ -1,15 +1,36 @@
-<h2><%= @question.content %></h2>
-<%= image_tag @question.correct_image %>
-<%= image_tag @question.incorrect_image %>
+<%= render 'shared/after_login_header' %>
 
-<%= form_with url: answer_quiz_path(@question) do |form| %>
-  <div>
-    <%= form.radio_button :choice, @question.correct_choice %>
-    <%= form.label :choice, @question.correct_choice %>
-  </div>
-  <div>
-    <%= form.radio_button :choice, @question.incorrect_choice %>
-    <%= form.label :choice, @question.incorrect_choice %>
-  </div>
-  <%= form.submit '判定' %>
+<% if flash[:success] %>
+  <div class="alert alert-success"><%= flash[:success] %></div>
 <% end %>
+<% if flash[:danger] %>
+  <div class="alert alert-danger"><%= flash[:danger] %></div>
+<% end %>
+
+<div class="center-container">
+<h1><%= @question.content %></h1>
+
+<div class="choices">
+  <%= form_with(url: answer_quiz_path(@question), method: :post, local: true) do %>
+    <div class="choice-container">
+      <% if @question.correct_image.present? %>
+        <img src="<%= asset_path(@question.correct_image) %>" alt="正解の画像" class="quiz-image">
+      <% end %>
+      <label class="choice-label">
+        <input type="radio" name="choice" value="選択肢1"> 選択肢1
+      </label>
+    </div>
+
+    <div class="choice-container">
+      <% if @question.incorrect_image.present? %>
+        <img src="<%= asset_path(@question.incorrect_image) %>" alt="不正解の画像" class="quiz-image">
+      <% end %>
+      <label class="choice-label">
+        <input type="radio" name="choice" value="選択肢2"> 選択肢2
+      </label>
+    </div>
+    
+    <%= submit_tag "判定", class: "btn btn-primary" %>
+  <% end %>
+</div>
+</div>
