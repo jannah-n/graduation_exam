@@ -131,7 +131,7 @@ header {
 
 .choices {
     display: flex; /* Flexboxを使用 */
-    flex-direction: column; /* 縦に並べる */
+    flex-direction: row; /* 縦に並べる */
     align-items: center; /* 横方向の中央揃え */
     justify-content: center; /* 縦方向の中央揃え */
     margin-top: 20px; /* 上部に余白を追加 */
@@ -143,13 +143,19 @@ header {
     margin-bottom: 15px; /* 選択肢間のスペース */
 }
 
+.choice-pair {
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    margin-bottom: 10px; /* 選択肢間の間隔を調整 */
+  }
+
 .center-container {
     display: flex; /* Flexboxを使用 */
     flex-direction: column; /* 縦に並べる */
     align-items: center; /* 横方向の中央揃え */
     justify-content: flex-start; /* 縦方向の中央揃え */
     height: 100vh; /* ビューポートの高さに合わせる */
-    padding-top: 50px; /* 上部に20pxのパディングを追加 */
+    padding-top: 50px; /* 上部に50pxのパディングを追加 */
 }
 
 .complete-message {
